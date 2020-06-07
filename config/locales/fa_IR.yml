@@ -1,21 +1,21 @@
 
-# BigBlueButton open source conferencing system - http://www.bigbluebutton.org/.
-#
-# Copyright (c) 2018 BigBlueButton Inc. and by respective authors (see below).
-#
-# This program is free software; you can redistribute it and/or modify it under the
-# terms of the GNU Lesser General Public License as published by the Free Software
-# Foundation; either version 3.0 of the License, or (at your option) any later
-# version.
-#
-# BigBlueButton is distributed in the hope that it will be useful, but WITHOUT ANY
-# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
-#
-# You should have received a copy of the GNU Lesser General Public License along
-# with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
+# customized for sanam
+# do not delete blank lines
 
-# Locale.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 fa_IR:
   activerecord:
@@ -37,7 +37,7 @@ fa_IR:
         enabled: فعال شده
         info: تنها به کاربران احراز هویت شده اجازه پیوستن به اتاق را بده
         title: نیازمند احراز هویت برای اتاق ها
-        user-info: شما می بایست برای پیوستن به این اتاق وارد گرین لایت شوید
+        user-info: برای پیوستن به اتاق، ابتدا وارد سامانه شوید
       branding:
         change: تغییر تصویر
         info: تغییر تصویر شخصی سازی که در گوشه بالای سمت چپ به نمایش در می آید
@@ -81,9 +81,9 @@ fa_IR:
         info: ایجاد محدودیت برای تعداد اتاق هایی که یک کاربر می تواند داشته باشد (شامل اتاق خانه). این تنظیم به مدیران اعمال نخواهد شد.
         title: تعداد اتاق ها به ازاء کاربر
       shared_access:
-        info: تنظیمات غیر فعال سازی، دکمه انتخاب گرینه ها را از اتاق حذف می کند تا کاربران را از به اشتراک گذازی اتاق ها منع کند
+        info: تنظیمات غیر فعال سازی، دکمه انتخاب گزینه ها را از اتاق حذف می کند تا کاربران را از به اشتراک گذازی اتاق ها منع کند
         title: امکان اشتراک گذاری اتاق ها به کاربران عادی
-      subtitle: شخصی سازی گرینلایت
+      subtitle: شخصی سازی کلاس سنام
       title: تنظیمات سایت
     flash:
       approved: کاربر با موفقیت تایید شد
@@ -194,9 +194,9 @@ fa_IR:
       contact_admin: اگر شما مدیر نیستید، لطفا با یک مدیر تماس بگیرید.
       continue: ما تمایل به ماندن در نسخه 1.0 را دارم.
       notice: >
-        خطایی در انتقال دیتابیس گرین لایت رخ داده است. <br> این ممکن است به دلیل این باشد که شما به نسخه 2.0 گرین لایت به روز رسانی نکرده اید.
+        خطایی در انتقال دیتابیس کلاس سنام رخ داده است. <br> این ممکن است به دلیل این باشد که شما به نسخه 2.0 کلاس سنام به روز رسانی نکرده اید.
       upgrade: به من نشان بده چگونه به نسخه 2.0 به روز رسانی کنم!
-      version: ما یک نسخه جدید از گرین لایت را منتشر کرده ایم، اما پایگاه داده شما با آن سازگاری ندارد.
+      version: ما یک نسخه جدید از کلاس سنام را منتشر کرده ایم، اما پایگاه داده شما با آن سازگاری ندارد.
     messages:
       blank: نمیتواند خالی باشد
       too_short: بسیار کوتاه است
@@ -235,7 +235,7 @@ fa_IR:
     email: ایمیل
     submit: ارسال
   go_back: بازگشت
-  greenlight: گرین لایت
+  greenlight: کلاس سنام
   header:
     all_recordings: تمام جلسات ضبط شده
     dropdown:
@@ -259,11 +259,11 @@ fa_IR:
     search:
       start: در حال جستجو...
   landing:
-    about: "%{href} یک واسط کاربری ساده برای استفاده از سرور کنفرانس وبی متن باز سنام است. شما می توانید اتاق هایی برای میزبانی جلسات خود یا پیوستن به جلسات دیگران از طریق ادرس آنها، ایجاد کنید."
+    about: 
     welcome: به کلاس مجازی سنام خوش آمدید
-    video: ویدئوی آموزشی ما را در مورد استفاده از گرین لایت مشاهده کنید
+    video: 
     upgrade: به من نشان بده چگونه به نسخه 2.0 به روز رسانی کنم!
-    version: ما یک نسخه جدید از گرین لایت را منتشر کرده ایم، اما پایگاه داده شما با آن سازگاری ندارد.
+    version: ما یک نسخه جدید از کلاس سنام را منتشر کرده ایم، اما پایگاه داده شما با آن سازگاری ندارد.
   language_default: پیشفرض (زبان مرورگر)
   ldap_error: امکان دسترسی به سرور LDAP وجود ندارد. لطفا تنظیمات LDAP خود را در فایل env بررسی کرده و مطمئن شوید سرور در حال اجرا است.
   login: ورود
@@ -275,10 +275,10 @@ fa_IR:
         signin: برای دسترسی به اتاق های شخصی خود، روی دگمه زیر کلیک کرده و وارد شوید.
         signin_link: ورود
         signup:
-          info: یک کاربر جدید در گرین لایت ثبت نامه کرده است
-          more-info: برای داشتن مجوز دسترسی برای این کاربر به گرین لایت، شما می بایست حساب کاربری آن ها را در تنظیمات سازمان تایید کنید.
+          info: یک کاربر جدید در کلاس سنام ثبت نامه کرده است
+          more-info: برای داشتن مجوز دسترسی برای این کاربر به کلاس سنام، شما می بایست حساب کاربری آن ها را در تنظیمات سازمان تایید کنید.
           admins_link: مشاهده صفحه سازمان
-          subject: ثبت نام کاربر جدید گرین لایت
+          subject: ثبت نام کاربر جدید کلاس سنام
           username: "کاربر با نام %{name} و ادرس ایمیل %{email} ثبت نام کرده است."
         subject: حساب کاربری تایید شد
         username: "نام کاربری شما %{email} است."
@@ -292,9 +292,9 @@ fa_IR:
         signup_info: برای ثبت نام از طریق ادرس ایمیلتان، روی دکمه زیر کلیک کرده و مراحل را انجام دهید.
         signup_link: ثبت نام
         signup:
-          info: کاربری که دعوت کرده بودید برای استفاده از گرین لایت ثبت نام کرده است.
+          info: کاربری که دعوت کرده بودید برای استفاده از کلاس سنام ثبت نام کرده است.
           admins_link: صفحه سازمان را مشاهده کنید
-          subject: ثبت نام کاربر گرین لایت جدید
+          subject: ثبت نام کاربر کلاس سنام جدید
           username: "کاربر با نام %{name} و ادرس ایمیل %{email} ثبت نام کرده است."
         subject: دعوت نامه برای پیوستن به سنام
         username: "نام کاربری شما %{email} است."
