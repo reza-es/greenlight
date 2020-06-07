@@ -229,7 +229,7 @@ fa_IR:
     designs: طراحی های شخصی
     authentication: احراز هویت کاربر
   footer:
-    powered_by: "برگرفته از %{href}."
+    powered_by: سامانه یکپارچه سنام و bbb/greenlight
   forgot_password:
     subtitle: فراموشی رمز عبور
     email: ایمیل
