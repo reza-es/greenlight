@@ -6,7 +6,7 @@
     <%= t("room.room_limit_exceeded", difference: @diff) %>
   </div>
 <% end %>
-<div class="background pb-1">
+<div class="background pb-1" style="direction: rtl;">
   <div class="container">
     <div class="row pt-7 pt-sm-9">
       <div class="col-lg-8 col-sm-12">
@@ -21,9 +21,9 @@
         </div>
         <h4 class="text-left mb-6"><%= @room.sessions %> <%= t("room.sessions") %> | <%= @recordings.length %> <%= t("room.recordings") %></h4>
         <% unless exceeds_limit %>
-          <label class="form-label"><%= t("room.invite_participants") %></label>
+          <label class="form-label">برای  <%= t("room.invite_participants") %> آدرس زیر را برای آنها ارسال کنید </label>
           <div class="row">
-            <div class="col-lg-7 col-md-12 mt-2">
+            <div class="col-lg-7 col-md-12 mt-2" style="direction: ltr;">
               <div class="input-icon invite-link-input">
                 <span class="input-icon-addon">
                   <i class="fas fa-link"></i>
