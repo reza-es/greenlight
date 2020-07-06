@@ -19,9 +19,9 @@
             <a><i id="edit-room" class="fa fa-edit align-top home-indicator ml-2" data-edit-room="<%= @room.uid %>"></i></a>
           <% end %>
         </div>
-        <h4 class="text-left mb-6"><%= @room.sessions %> <%= t("room.sessions") %> | <%= @recordings.length %> <%= t("room.recordings") %></h4>
+        <h4 class="text-right mb-6"><%= @room.sessions %> <%= t("room.sessions") %> | <%= @recordings.length %> <%= t("room.recordings") %></h4>
         <% unless exceeds_limit %>
-          <label class="form-label">برای  <%= t("room.invite_participants") %> آدرس زیر را برای آنها ارسال کنید </label>
+          <label class="form-label text-right">برای  <%= t("room.invite_participants") %> آدرس زیر را برای آنها ارسال کنید </label>
           <div class="row">
             <div class="col-lg-7 col-md-12 mt-2" style="direction: ltr;">
               <div class="input-icon invite-link-input">
