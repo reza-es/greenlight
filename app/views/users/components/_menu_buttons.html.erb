@@ -1,6 +1,6 @@
 <!-- users/components/_menu_buttons.html.erb -->
 
-<div class="list-group list-group-transparent mb-0">
+<div class="list-group list-group-transparent mb-0" style="text-align:right;">
   <%= link_to edit_user_path, class: "list-group-item list-group-item-action dropdown-item #{"active" if active_page == "edit"}" do %>
     <span class="icon mr-3"><i class="fas fa-user"></i></span><%= t("settings.account.title") %>
   <% end %>
