@@ -159,7 +159,7 @@ fa_IR:
       table:
         ended: "پایان یافته: %{session}"
         id: شناسه
-        not_running: در حال اجرا نبودن
+        not_running: در حال اجرا نیست
         participants: شرکت کنندگان
         running: در حال اجرا
         started: "شروع شده: %{session}"
@@ -193,7 +193,7 @@ fa_IR:
       title: مدیریت کاربران
   add_to_google_calendar: "افزودن تقویم گوگل"
   bigbluebutton: سنام
-  bigbluebutton_exception: اوپس، خطایی در هنگام شروع جلسه رخ داده است!
+  bigbluebutton_exception: خطایی در هنگام شروع جلسه رخ داده است!
   cancel: لغو
   cookies:
     cookie_info: کوکی ها به ما کمک میکنند تا خدمات خود را ارائه دهیم. با استفاده از این خدمات، شما با استفاده از کوکی های ما موافقت میکنید.
@@ -263,7 +263,7 @@ fa_IR:
   footer:
     legal: رسمی
     privpolicy: حریم خصوصی
-    powered_by: سامانه یکپارچه سنام. استفاده از بیگ بلو باتن
+    powered_by: سامانه آموزشی یکپارچه سنام.
   forgot_password:
     subtitle: فراموشی رمز عبور
     email: ایمیل
