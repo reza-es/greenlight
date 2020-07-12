@@ -159,7 +159,7 @@ fa_IR:
       table:
         ended: "پایان یافته: %{session}"
         id: شناسه
-        not_running: در حال اجرا نیست
+        not_running: اجرا نیست
         participants: شرکت کنندگان
         running: در حال اجرا
         started: "شروع شده: %{session}"

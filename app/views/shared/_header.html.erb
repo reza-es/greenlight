@@ -41,39 +41,48 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" x-placement="bottom-end">
               <%= link_to edit_user_path(current_user), class: "dropdown-item"  do %>
-                <i class="dropdown-icon fas fa-id-card mr-3"></i><%= t("header.dropdown.settings") %>
+				<div style="text-align:right;">
+					<i class="dropdown-icon fas fa-id-card ml-3"></i><%= t("header.dropdown.settings") %>
+				</div>
               <% end %>
               <% highest_role = current_user.role %>
               <% if highest_role.get_permission("can_manage_users") || highest_role.name == "super_admin" %>
                 <%= link_to admins_path, class: "dropdown-item" do %>
-                  <i class="dropdown-icon fas fa-user-tie mr-3"></i><%= t("header.dropdown.account_settings") %>
+				<div style="text-align:right;">
+                  <i class="dropdown-icon fas fa-user-tie ml-3"></i><%= t("header.dropdown.account_settings") %>
+				</div>
                 <% end %>
               <% elsif highest_role.get_permission("can_manage_rooms_recordings")%>
                 <%= link_to admin_rooms_path, class: "dropdown-item" do %>
-                  <i class="dropdown-icon fas fa-user-tie mr-3"></i><%= t("header.dropdown.account_settings") %>
+				<div style="text-align:right;">
+                  <i class="dropdown-icon fas fa-user-tie ml-3"></i><%= t("header.dropdown.account_settings") %>
+				</div>
                 <% end %>
               <% elsif highest_role.get_permission("can_edit_site_settings") %>
                 <%= link_to admin_site_settings_path, class: "dropdown-item" do %>
-                  <i class="dropdown-icon fas fa-user-tie mr-3"></i><%= t("header.dropdown.account_settings") %>
+				<div style="text-align:right;">
+                  <i class="dropdown-icon fas fa-user-tie ml-3"></i><%= t("header.dropdown.account_settings") %>
+				</div>
                 <% end %>
               <% elsif highest_role.get_permission("can_edit_roles")%>
                 <%= link_to admin_roles_path, class: "dropdown-item" do %>
-                  <i class="dropdown-icon fas fa-user-tie mr-3"></i><%= t("header.dropdown.account_settings") %>
+				<div style="text-align:right;">
+                  <i class="dropdown-icon fas fa-user-tie ml-3"></i><%= t("header.dropdown.account_settings") %>
+				</div>
                 <% end %>
               <% end %>
               <div class="dropdown-divider"></div>
-              <% if Rails.configuration.help_url.present? %>
-                <a class="dropdown-item" href="<%= Rails.configuration.help_url %>" target="_blank" rel="noopener">
-                  <i class="dropdown-icon far fa-question-circle"></i> <%= t("header.dropdown.help") %>
-                </a>
-              <% end %>
               <% if Rails.configuration.report_issue_url.present? %>
-                <a class="dropdown-item" href="<%= Rails.configuration.report_issue_url %>" target="_blank" rel="noopener">
-                  <i class="dropdown-icon fas fa-exclamation mr-3"></i><%= t("errors.internal.report") %>
-                </a>
+				<div style="text-align:right;">
+					<a class="dropdown-item" href="<%= Rails.configuration.report_issue_url %>" target="_blank" rel="noopener">
+					  <i class="dropdown-icon fas fa-exclamation ml-3"></i><%= t("errors.internal.report") %>
+					</a>
+				</div>
               <% end %>
               <%= button_to logout_path, class: "dropdown-item" do %>
-                <i class="dropdown-icon fas fa-sign-out-alt"></i> <%= t("header.dropdown.signout") %>
+				<div style="text-align:right;">
+					<i class="dropdown-icon fas fa-sign-out-alt" style="margin: 0 0 0 3px;"></i> <%= t("header.dropdown.signout") %>
+				</div>
               <% end %>
             </div>
           </div>
