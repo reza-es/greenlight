@@ -24,7 +24,7 @@ fa_IR:
         email: ایمیل
         name: نام
         password: رمز عبور
-        password_confirmation: تایید رمز عبور
+        password_confirmation: تکرار رمز عبور
     errors:
       models:
         user:
@@ -489,7 +489,7 @@ fa_IR:
     invalid_token: توکن بازنشانی رمز عبور نامعتبراست. دوباره تلاش نمایید
     subtitle: بازنشانی رمز عبور
     password: رمز عبور جدید
-    confirm: تایید رمز عبور جدید
+    confirm: تکرار رمز عبور جدید
     update: به روز رسانی رمز عبور
     auth_change: روش احراز هویت تغییر کرده است. لطفا ایمیل خود را برای ست کردن رمز عبور بررسی کنید
   roles:
@@ -570,7 +570,7 @@ fa_IR:
     title: پروفایل
     search: جستجو
   signup:
-    password_confirm: تایید رمز عبور
+    password_confirm: تکرار رمز عبور
     subtitle: ایجاد حساب کاربری
     title: ثبت نام
     with: "ثبت نام با %{provider}"
